@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Pixel Dungeon Rescue 8-Bit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <div id="game-container">
+    <div class="header">
+      <div class="hud-item">HP: <span id="hp-val">3</span></div>
+      <div class="hud-item">MOEDAS: <span id="coin-val">0</span>/5</div>
+      <div class="hud-item">CHAVE: <span id="key-val">NÃO</span></div>
+    </div>
+
+    <div class="canvas-wrapper">
+      <canvas id="gameCanvas" width="320" height="240"></canvas>
+      <div id="overlay" class="overlay">
+        <h1 id="overlay-title">PIXEL RESCUE</h1>
+        <p id="overlay-msg">Resgate a princesa no calabouço!</p>
+        <button id="start-btn">JOGAR</button>
+      </div>
+    </div>
+
+    <!-- Controles mobile / Touch -->
+    <div id="controls">
+      <div class="dpad">
+        <button id="btn-left" class="btn">◀</button>
+        <button id="btn-right" class="btn">▶</button>
+      </div>
+      <div class="actions">
+        <button id="btn-attack" class="btn btn-red">⚔️</button>
+        <button id="btn-jump" class="btn btn-blue">▲</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
